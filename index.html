@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng xem tin tức</title>
+    <script src="https://kit.fontawesome.com/c92513218a.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="main-nav navbar navbar-expand-md">
+        <h1 class="navbar-brand logo">My News <i class="fas fa-search"></i></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demo">
+            <i class="fas fa-bars small-nav"></i>
+        </button>
+        <div id="demo" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li id="news" class="nav-item">Breaking-News</li>
+                <li id="business" class="nav-item">Business</li>
+                <li id="technology" class="nav-item">Technology</li>
+                <li id="sports" class="nav-item">Sports</li>
+                <li id="science" class="nav-item">Science</li>
+            </ul>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+    <div class="search-box">
+        <label for="search">Keywords
+            <input type="text" id="search"></label>
+        <label for="fromDate">From Date
+            <input type="date" id="fromDate"></label>
+        <label for="toDate">To Date
+            <input type="date" id="toDate"></label>
+        <button id="btn">Search</button>
+        <i class="far fa-window-close"></i>
+    </div>
+    <div id="root"></div>
+    <div id="loading" class="fa-3x hidden">
+        <i class="fas fa-spinner fa-pulse"></i>
+        <p>Vui lòng đợi giây lát...</p>
+    </div>
+
+</body>
+
+</html>

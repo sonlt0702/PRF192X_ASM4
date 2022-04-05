@@ -1,0 +1,96 @@
+/* ---------default seting----------- */
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    margin: 0 10px;
+}
+/* -----navigation------------------ */
+.main-nav{
+    text-align: center;
+    background-color: #ff7e4f;
+    margin: 0;
+}
+.main-nav li{
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+h1{
+    font-size: 35px;
+    padding: 10px 20px;
+}
+.fa-search{
+    cursor: pointer;
+    font-size: 32px;
+    margin-left: 10px;
+}
+/* -----------search box------------- */
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    z-index: 50;
+    display: none;
+}
+.search-box{
+    background-color: white;
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px 5px;
+    position: absolute;
+    left: 10%;
+    z-index: 51;
+    display: none;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.fa-window-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/* ----------main-------------- */
+#root{
+    margin: 10px 0;
+}
+.row{
+    margin: 10px 0;
+}
+.row div{
+    padding: 0;
+}
+.row img{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.row li{
+    margin-bottom: 20px;
+}
+/* -----------icon loading-------- */
+.fa-3x{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+/* -----------responsive */
+@media only screen and (max-width:768px) {
+    label{
+        display: block;
+    }
+}
